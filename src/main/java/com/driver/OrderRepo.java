@@ -8,16 +8,15 @@ import java.util.List;
 
 @Repository
 public class OrderRepo {
-     private HashMap<String,Order> oMap;
-     private HashMap<String,DeliveryPartner> pMap;
-     private HashMap<String, List<String>> o_P_pair;
-     private HashMap<String,Order> unAssignOrder;
+      HashMap<String,Order> oMap=new HashMap<>();
+      HashMap<String,DeliveryPartner> pMap=new HashMap<>();
+      HashMap<String, List<String>> o_P_pair=new HashMap<>();
+      HashMap<String,Order> unAssignOrder=new HashMap<>();
 
-    public OrderRepo(HashMap<String, Order> oMap, HashMap<String, DeliveryPartner> pMap, HashMap<String, List<String>> o_P_pair,HashMap<String,Order> unAssignOrder) {
-        this.oMap = new HashMap<>();
-        this.pMap = new HashMap<>();
-        this.o_P_pair = new HashMap<>();
-        this.unAssignOrder =new HashMap<>();
+
+
+    public OrderRepo() {
+
     }
 
     public void addOrder(Order order) {
